@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdDelete, MdAddCircleOutline, MdRemoveCircleOutline } from 'react-icons/md';
+import NavBar from '../../components/NavBar';
 import { useCart } from '../../hooks/useCart';
 import { formatPrice } from '../../util/format';
 import styles from './styles.module.scss';
@@ -44,6 +45,7 @@ export default function Cart() {
 
     return (
         <div className={styles.bgContainer}>
+            <NavBar />
             <div className={styles.container}>
                 <table className={styles.productTable}>
                     <thead>

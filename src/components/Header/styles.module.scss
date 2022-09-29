@@ -2,10 +2,10 @@
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
     position: relative;
     width: 100%;
     height: 100vh !important;
+    background-image: url('../../assets/images/background-header.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed;
@@ -28,8 +28,23 @@
     
 }
 
-.headerBg {
+@media (max-width: 870px) {
 
-    background-image: url('../../assets/images/background-header.jpg');
+    .header {
+        
+        background-size: 100% 100%;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .header {
+        
+        height: 80vh !important;
+        background-size: 100% 80%;
+        background-position: left top;
+        
+    }
 
 }

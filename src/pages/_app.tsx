@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <CartProvider>
-        <NavBar />
+        
         <Component {...pageProps} />
         <ToastContainer autoClose={3000} />
       </CartProvider>

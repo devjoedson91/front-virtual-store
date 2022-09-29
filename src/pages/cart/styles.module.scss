@@ -11,8 +11,10 @@
     background: #fff;
     border-radius: 4px;
     max-width: 1020px;
-    margin: 10% auto;  
-
+    position: absolute;
+    top: 200px;
+    left: 220px;
+    
     footer {
 
         margin-top: 30px;
@@ -92,6 +94,7 @@
 }
 
 .total {
+
     display: flex;
     align-items: baseline;
 
@@ -105,3 +108,4 @@
         margin-left: 5px;
     }
 }
+
