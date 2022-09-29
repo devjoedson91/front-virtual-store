@@ -44,7 +44,7 @@ export default function Cart() {
     }
 
     return (
-        <div className={styles.bgContainer}>
+        <div className={styles.cartContainer}>
             <NavBar />
             <div className={styles.container}>
                 <table className={styles.productTable}>
