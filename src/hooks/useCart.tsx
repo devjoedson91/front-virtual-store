@@ -23,26 +23,18 @@ const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({children}: CartProviderProps): JSX.Element {
 
-    const [storagedCart, setStoragedCart] = useState(undefined);
+    const [cart, setCart] = useState<Product[]>([]);
 
     useEffect(() => {
 
-        setStoragedCart(localStorage.getItem('virtual@store'));
-
-    }, []);
-    
-    const [cart, setCart] = useState<Product[]>(() => {
-
-        //const storagedCart = localStorage.getItem('virtual@store');
+        const storagedCart = localStorage.getItem('virtual@store');
 
         if (storagedCart) {
-            return JSON.parse(storagedCart);
+            setCart(JSON.parse(storagedCart));
         }
-      
-        return [];
 
-    });
-
+    }, []);
+  
     const prevCartRef = useRef<Product[]>();
 
     useEffect(() => {
