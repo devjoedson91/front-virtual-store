@@ -12,12 +12,16 @@ button {
 
 a {
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body, input, textarea, select, button {
   font: 400 1rem sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: sans-serif;
 }
 
 @media (max-width: 720px) {
