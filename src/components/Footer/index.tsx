@@ -30,12 +30,12 @@ export default function Footer() {
           <h3>Redes Sociais</h3>
           <ul>
             <li>
-              <a href="https://twitter.com/hcodebr">
+              <a href="https://www.instagram.com/casademariaccr/">
                 <FaInstagram size={25} color="#fff" />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/hcodebr">
+              <a href="https://www.facebook.com">
                 <FaFacebookSquare size={25} color="#fff" />
               </a>
             </li>
@@ -49,7 +49,7 @@ export default function Footer() {
         </small>
         <small>
           Desenvolvido por
-          <a href="https://www.hcode.com.br" target="_blank">
+          <a href="https://github.com/devjoedson91?tab=repositories" target="_blank">
              Joedson Ferreira Developer
           </a>
         </small>
