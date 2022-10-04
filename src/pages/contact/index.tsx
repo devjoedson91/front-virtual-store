@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./styles.module.scss";
 import { useCart } from "../../hooks/useCart";
 import Header from "../../components/Header";
+import {MdLocationOn, MdPhoneEnabled, MdOutlineMailOutline} from 'react-icons/md';
 
 export default function Contact() {
   const { cart } = useCart();
@@ -56,15 +57,15 @@ export default function Contact() {
             <div className={styles.info}>
               <h3>Informações de Contato</h3>
               <ul>
-                <li className="address">
+                <li className="address"><MdLocationOn size={25} color="#777"/>
                   Avenida, R. José Versolato, 101 - 12ª andar - Centro, São
                   Bernardo do Campo - SP, 09750-730
                 </li>
                 <li className="phone">
-                  <a href="tel://1121497360">(11) 2149-7360</a>
+                  <MdPhoneEnabled size={25} color="#777"/><a href="tel://1121497360">(11) 2149-7360</a>
                 </li>
                 <li className="email">
-                  <a href="mailto:contato@hcode.com.br">contato@hcode.com.br</a>
+                  <MdOutlineMailOutline size={25} color="#777"/><a href="#">casademaria@ccr.com.br</a>
                 </li>
               </ul>
             </div>
