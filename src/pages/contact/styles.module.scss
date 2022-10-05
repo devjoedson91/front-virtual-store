@@ -99,13 +99,18 @@
     }
 
     li {
-        padding: 0 0 0 50px;
+        display: flex;
         margin: 0 0 30px 0;
         list-style: none;
         position: relative;
         color: #777;
     }
 
+    a, p {
+        margin-left: 20px;
+    }
+
+   
 }
 
 @media (max-width: 820px) {
